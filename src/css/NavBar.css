@@ -1,0 +1,111 @@
+@keyframes slideIn {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideOut {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+.header{
+    margin: 100px 0;
+}
+.navBar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px; /* Add padding to the navbar */
+    width: 100%;
+    position: fixed; 
+    top: 0;
+    background-color: var(--navbar-background-color);
+}
+
+.navBarButton.active{
+    border-bottom: solid 2px var(--navbar-hover-color);
+}
+
+.navBarButtons {
+    display: flex; /* Make the buttons container a flex container */
+    gap: 2em; /* Add some gap between the buttons */
+    align-items: center; /* Vertically align the buttons */
+    margin-right: 3em;
+}
+
+.navBarButtonText{
+    display: inline;
+    font-size: 1em;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.navBarItem{
+    margin: 0 10px;
+    align-items: center;
+}
+
+.navBarButtonText:hover{
+    border-bottom: solid 2px var(--navbar-hover-color);
+}
+
+
+link{
+    text-decoration: none;
+}
+
+.hamburger{
+    display: none;
+    color: var(--font-color);
+}
+
+.hamburger:hover{
+    cursor: pointer;
+}
+
+
+@media screen and (max-width: 800px) {
+
+    .navBarButtons {
+        display: none; /* Hide on smaller screens by default */
+        flex-direction: column;
+        gap: 0.1em;
+        text-align: center;
+        width: fit-content;
+        
+
+        position: absolute;
+        
+        top:3rem;
+        left: 0px;
+        z-index: 1;
+        margin: 0;
+        
+        text-decoration: none;
+    }
+
+    .navBarButtons.active{
+        display:flex;
+    }
+    
+    .navBarItem{
+        width: 200px;
+        margin: 0;
+        padding: 10px 0;
+        background-color: var(--navbar-background-color);
+        border: solid 2px var(--navbar-hover-color);
+    }
+
+    .hamburger{
+        display: flex;
+    
+    }
+
+}

@@ -1,0 +1,34 @@
+/* src/components/WelcomeAnimation.css */
+.welcome-animation {
+  
+  opacity: 0;
+  display: flex;
+  justify-content: center; /* Horizontally center */
+  align-items: center; /* Vertically center */
+  height: 100vh; /* Set the container's height to 100% of the viewport height */
+  
+}
+
+.welcome-dark{
+  background-color: #1e1e1e;
+  color: #ffffff;
+}
+
+.welcome-light{
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.animate {
+    animation: fadeInOut 3s;
+}
+  
+@keyframes fadeInOut {
+    0%, 100% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+}
+  
