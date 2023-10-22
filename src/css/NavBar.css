@@ -45,6 +45,7 @@
     font-size: 1em;
     text-align: center;
     margin: 0 auto;
+    color: var(--navbar-text-color);
 }
 
 .navBarItem{
@@ -63,7 +64,7 @@ link{
 
 .hamburger{
     display: none;
-    color: var(--font-color);
+    color: var(--navbar-hover-color);
 }
 
 .hamburger:hover{

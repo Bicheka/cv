@@ -32,6 +32,7 @@
     /* navBar dark */
     --navbar-background-color: #000000;
     --navbar-hover-color: #fefcb2;
+    --navbar-text-color: #ffffff;
     
 }
 
@@ -45,6 +46,7 @@
     /* navBar light */
     --navbar-background-color: #fefcb2;
     --navbar-hover-color: #000000;
+    --navbar-text-color: #000000;
     
 }
 
