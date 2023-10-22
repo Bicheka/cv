@@ -1,20 +1,3 @@
-@keyframes slideIn {
-    0% {
-        transform: translateX(-100%);
-    }
-    100% {
-        transform: translateX(0);
-    }
-}
-
-@keyframes slideOut {
-    0% {
-        transform: translateX(0);
-    }
-    100% {
-        transform: translateX(-100%);
-    }
-}
 .header{
     margin: 100px 0;
 }
@@ -26,10 +9,9 @@
     width: 100%;
     position: fixed; 
     top: 0;
-    background-color: var(--navbar-background-color);
 }
 
-.navBarButton.active{
+.navBarButton.active .navBarButtonText{
     border-bottom: solid 2px var(--navbar-hover-color);
 }
 
@@ -64,17 +46,17 @@ link{
 
 .hamburger{
     display: none;
-    color: var(--navbar-hover-color);
+    color: var(--hamburger-color);
 }
 
 .hamburger:hover{
     cursor: pointer;
 }
-
-
 @media screen and (max-width: 800px) {
 
     .navBarButtons {
+        background-color: var(--body-background-color);
+        border : solid 1px var(--navbar-hover-color);
         display: none; /* Hide on smaller screens by default */
         flex-direction: column;
         gap: 0.1em;
@@ -84,7 +66,7 @@ link{
 
         position: absolute;
         
-        top:3rem;
+        top:4.2rem;
         left: 0px;
         z-index: 1;
         margin: 0;
@@ -96,12 +78,15 @@ link{
         display:flex;
     }
     
-    .navBarItem{
+    .navBarButton{
         width: 200px;
         margin: 0;
         padding: 10px 0;
-        background-color: var(--navbar-background-color);
-        border: solid 2px var(--navbar-hover-color);
+        background-color: var(--body-background-color);
+        
+    }
+    .navBarButton:hover .navBarButtonText {
+        border-bottom: solid 2px var(--navbar-hover-color);
     }
 
     .hamburger{

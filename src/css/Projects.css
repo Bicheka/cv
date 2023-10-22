@@ -1,4 +1,4 @@
-.skills{
+.projects{
     margin : 8rem auto;
     width : 80%;
     text-align: left;
@@ -7,7 +7,7 @@
     margin-bottom: 2rem;
 }
 @media screen and (max-width: 800px) {
-    .skills{
+    .projects{
         font-size: var(--font-size-small);
 
     }

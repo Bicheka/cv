@@ -75,63 +75,47 @@ function NavBar(){
 
 
                 <div  className={`navBarButtons ${isOpen ? 'active' : ''}`}>
-                    <div className="navBarItem">
                         
-                        <Link 
-                            to = "/aboutme"
-                            className={`navBarButton ${activeButton === 'aboutme' ? 'active' : ''}`}
-                            onClick={() => handleNavBarButtonClick('aboutme')}
-                        >
-                            <p className='navBarButtonText'>About Me</p>
-                        </Link>
-                    
-                    </div>
-                    <div className="navBarItem">
-                        
-                        <Link 
-                            to = "/contact" 
-                            className={`navBarButton ${activeButton === 'contact' ? 'active' : ''}`}
-                            onClick={() => handleNavBarButtonClick('contact')}
-                        >
-                            <p className='navBarButtonText'>Contact</p>
-                        </Link>
-                        
-                    </div>
-                    <div className="navBarItem">
-                        
-                        <Link 
-                            to = "/skills" 
-                            className={`navBarButton ${activeButton === 'skills' ? 'active' : ''}`}
-                            onClick={() => handleNavBarButtonClick('skills')}
-                        >
-                            <p className='navBarButtonText'>Skills</p>
-                        </Link>
-                    </div>
-                    <div className="navBarItem">
-                            
-                        <Link 
-                            to = "/projects" 
-                            className={`navBarButton ${activeButton === 'projects' ? 'active' : ''}`}
-                            onClick={() => handleNavBarButtonClick('projects')}
-                        >
-                            <p className='navBarButtonText'>Projects</p>
-                        </Link>
-                    </div>
-                    <div className="navBarItem">
-                            
-                        <Link 
-                            to = "/blog" 
-                            className={`navBarButton ${activeButton === 'blog' ? 'active' : ''}`}
-                            onClick={() => handleNavBarButtonClick('blog')}
-                        >
-                            <p className='navBarButtonText'>Blog</p>
-                        </Link>
-                    </div>
+                    <Link 
+                        to = "/aboutme"
+                        className={`navBarButton ${activeButton === 'aboutme' ? 'active' : ''}`}
+                        onClick={() => handleNavBarButtonClick('aboutme')}
+                    >
+                        <p className='navBarButtonText'>About Me</p>
+                    </Link>
+                    <Link 
+                        to = "/contact" 
+                        className={`navBarButton ${activeButton === 'contact' ? 'active' : ''}`}
+                        onClick={() => handleNavBarButtonClick('contact')}
+                    >
+                        <p className='navBarButtonText'>Contact</p>
+                    </Link>
+                    <Link 
+                        to = "/skills" 
+                        className={`navBarButton ${activeButton === 'skills' ? 'active' : ''}`}
+                        onClick={() => handleNavBarButtonClick('skills')}
+                    >
+                        <p className='navBarButtonText'>Skills</p>
+                    </Link>  
+                    <Link 
+                        to = "/projects" 
+                        className={`navBarButton ${activeButton === 'projects' ? 'active' : ''}`}
+                        onClick={() => handleNavBarButtonClick('projects')}
+                    >
+                        <p className='navBarButtonText'>Projects</p>
+                    </Link>   
+                    <Link 
+                        to = "/blog" 
+                        className={`navBarButton ${activeButton === 'blog' ? 'active' : ''}`}
+                        onClick={() => handleNavBarButtonClick('blog')}
+                    >
+                        <p className='navBarButtonText'>Blog</p>
+                    </Link>
 
                 </div>
 
                 <div className = "hamburger">
-                    <Hamburger size={20} toggled={isOpen} toggle={setIsOpen} onClick = {toggleNavbar}/>
+                    <Hamburger direction="" size={20} toggled={isOpen} toggle={setIsOpen} onClick = {toggleNavbar}/>
                 </div>
 
 
