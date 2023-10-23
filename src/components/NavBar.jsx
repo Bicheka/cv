@@ -104,13 +104,13 @@ function NavBar(){
                     >
                         <p className='navBarButtonText'>Projects</p>
                     </Link>   
-                    <Link 
+                    {/* <Link 
                         to = "/blog" 
                         className={`navBarButton ${activeButton === 'blog' ? 'active' : ''}`}
                         onClick={() => handleNavBarButtonClick('blog')}
                     >
                         <p className='navBarButtonText'>Blog</p>
-                    </Link>
+                    </Link> */}
 
                 </div>
 

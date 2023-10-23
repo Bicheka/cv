@@ -1,15 +1,38 @@
+h2{
+    margin-bottom: 1rem;
+}
+p{
+   font-size: 0.8rem; 
+}
 .about-me{
     margin : 8rem auto;
-    width : 80%;
+    width : 50%;
     text-align: left;
 }
-.page-title{
-    margin-bottom: 2rem;
+.greeting{
+    margin-bottom: 3rem;
+}
+.my-picture{
+    width: 200px;
+    height: 200px;
+    margin: 30px auto 50px auto;
+    display: block;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 0.5rem solid var(--my-picture-border-color);
+}
+.topic{
+    margin : 5rem auto;
+    max-width: 500px;
 }
 @media screen and (max-width: 800px) {
     .about-me{
         font-size: var(--font-size-small);
-
+        width: 80%;
+    }
+    .my-picture{
+        margin: 50px auto;
+        display: block;
     }
     
 }

@@ -9,6 +9,7 @@
     width: 100%;
     position: fixed; 
     top: 0;
+    background-color: var(--navbar-background-color);
 }
 
 .navBarButton.active .navBarButtonText{
@@ -55,7 +56,7 @@ link{
 @media screen and (max-width: 800px) {
 
     .navBarButtons {
-        background-color: var(--body-background-color);
+        background-color: var(--navbar-background-color);
         border : solid 1px var(--navbar-hover-color);
         display: none; /* Hide on smaller screens by default */
         flex-direction: column;
