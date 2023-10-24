@@ -89,7 +89,3 @@ h2{
 p{
    font-size: var(--font-size);; 
 }
-a{
-    color: var(--link-color);
-    font-weight: 550;
-}
