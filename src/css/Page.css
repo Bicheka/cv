@@ -1,0 +1,38 @@
+.page{
+    margin : 8rem auto;
+    width : var(--width);
+    text-align: left;
+    width: var(--width);
+}
+.page-title{
+    margin: 8rem auto 10rem auto;; 
+}
+.topic{
+    margin-bottom: 10rem;
+
+}
+.topic-title{
+    margin-bottom: 3rem;
+}
+
+@media screen and (max-width: 1300px) {
+    .page{
+        font-size: var(--font-size-small);
+        width: var(--width-small);
+    }
+    .my-picture{
+        margin: 50px auto;
+        display: block;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .page{
+        font-size: var(--font-size-small);
+        width: var(--width-xsmall);
+    }
+    .my-picture{
+        margin: 50px auto;
+        display: block;
+    }
+}

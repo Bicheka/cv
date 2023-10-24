@@ -1,38 +1,44 @@
-h2{
-    margin-bottom: 1rem;
-}
-p{
-   font-size: 0.8rem; 
-}
-.about-me{
-    margin : 8rem auto;
-    width : 50%;
-    text-align: left;
-}
 .greeting{
     margin-bottom: 3rem;
 }
+.about-me-header{
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
 .my-picture{
-    width: 200px;
-    height: 200px;
+    width: 400px;
+    height: 400px;
     margin: 30px auto 50px auto;
     display: block;
     border-radius: 50%;
     object-fit: cover;
-    border: 0.5rem solid var(--my-picture-border-color);
+    border: 0.2rem solid var(--my-picture-border-color);
 }
-.topic{
-    margin : 5rem auto;
-    max-width: 500px;
+.image-text{
+    padding-left: 4rem;
 }
-@media screen and (max-width: 800px) {
-    .about-me{
-        font-size: var(--font-size-small);
-        width: 80%;
+
+@media screen and (max-width: 1300px) {
+    .about-me-header{
+        display: block;
+        align-items: left;
+        justify-content: left;
     }
+    .my-picture{
+      float: none;
+      display: block;
+    }
+    .image-text{
+        margin-bottom: 10rem;
+        padding: 0;
+    }
+
+}
+
+@media screen and (max-width: 800px) {
     .my-picture{
         margin: 50px auto;
         display: block;
     }
-    
 }

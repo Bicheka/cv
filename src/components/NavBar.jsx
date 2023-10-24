@@ -73,7 +73,6 @@ function NavBar(){
 
                 <ToggleTheme/>
 
-
                 <div  className={`navBarButtons ${isOpen ? 'active' : ''}`}>
                         
                     <Link 
@@ -103,14 +102,7 @@ function NavBar(){
                         onClick={() => handleNavBarButtonClick('projects')}
                     >
                         <p className='navBarButtonText'>Projects</p>
-                    </Link>   
-                    {/* <Link 
-                        to = "/blog" 
-                        className={`navBarButton ${activeButton === 'blog' ? 'active' : ''}`}
-                        onClick={() => handleNavBarButtonClick('blog')}
-                    >
-                        <p className='navBarButtonText'>Blog</p>
-                    </Link> */}
+                    </Link>
 
                 </div>
 

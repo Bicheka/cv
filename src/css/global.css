@@ -11,11 +11,16 @@
     /* Font */
     --font-family: 'Helvetica', sans-serif;
     --font-size: 1rem;
-    --font-size-small: 0.7rem;
+    --font-size-small: 0.8rem;
     --font-size-medium: 1.2rem;
     --font-size-large: 1.618rem;
     --font-size-xlarge: 2.618rem;
     --font-weight: 400;
+
+    /* width */
+    --width: 50%;
+    --width-small: 60%;
+    --width-xsmall: 80%;
 
 }
 
@@ -23,6 +28,7 @@
     /* body */
     --body-background-color: #1e1e1e;
     --font-color: #ffffff;
+    --link-color: #ffe600;
     
     /* toggle */
     --toggle-container-background-color: #fefcb2;
@@ -44,6 +50,7 @@
     /* body */
     --body-background-color: #ffffff;
     --font-color: #000000;
+    --link-color: #eb6a00;
 
     /* toggle */
     --toggle-container-background-color: #131313;
@@ -71,4 +78,18 @@ body{
 
     /* paragraph */
     line-height: 1.5rem;
+
+}
+h1{
+    font-size: var(--font-size-xlarge);
+}
+h2{
+    font-size: var(--font-size-large);
+}
+p{
+   font-size: var(--font-size);; 
+}
+a{
+    color: var(--link-color);
+    font-weight: 550;
 }
