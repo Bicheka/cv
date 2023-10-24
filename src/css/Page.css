@@ -20,19 +20,11 @@
         font-size: var(--font-size-small);
         width: var(--width-small);
     }
-    .my-picture{
-        margin: 50px auto;
-        display: block;
-    }
 }
 
 @media screen and (max-width: 800px) {
     .page{
         font-size: var(--font-size-small);
         width: var(--width-xsmall);
-    }
-    .my-picture{
-        margin: 50px auto;
-        display: block;
     }
 }
