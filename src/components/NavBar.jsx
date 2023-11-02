@@ -14,6 +14,7 @@ import ToggleTheme from './ToggleTheme';
 
 //icons
 import Hamburger from 'hamburger-react'
+import ScrollToTop from './ScrollToTop';
 
 
 //hook
@@ -69,6 +70,7 @@ function NavBar(){
 
     return (
         <BrowserRouter forceRefresh = {true}>
+            <ScrollToTop/>
             <div className="navBar">
 
                 <ToggleTheme/>
