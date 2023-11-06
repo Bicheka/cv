@@ -4,9 +4,9 @@ import "../css/ContactInfo.css";
 function ContactInfo() {
     return (
         <div className="page">
-
+            <h1 className="page-title">Contact Info</h1>
+            
             <div className="topic">
-                <h1 className="page-title">Contact Info</h1>
                 <h2 className="topic-title">Email</h2>
                 <p>You can always reach me at <a className="link" href="mailto:davidmartinezgilp@gmail.com">davidmartinezgilp@gmail.com</a></p>
             </div>

@@ -23,7 +23,7 @@ const Skills = () => {
 
   return (
     <div className="skills-container">
-      <h2 className='page-title'>My Skills</h2>
+      <h1 className='page-title'>My Skills</h1>
       <ul className="skills-list">
         {skills.map((skill, index) => (
           <li key={index} className="skill-item">
