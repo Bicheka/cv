@@ -9,7 +9,6 @@ import AboutMe from './AboutMe';
 import ContactInfo from './ContactInfo';
 import Skills from './Skills';
 import Projects from './Projects';
-import Blog from './Blog';
 import ToggleTheme from './ToggleTheme';
 
 //icons
@@ -18,8 +17,6 @@ import ScrollToTop from './ScrollToTop';
 
 
 //hook
-
-
 
 
 function NavBar(){
@@ -116,12 +113,11 @@ function NavBar(){
             </div>
             
             <Routes>
-            <Route path="/" element={<Navigate to="/aboutme" />} />
+                <Route path="/" element={<Navigate to="/aboutme" />} />
                 <Route exact path='/aboutme' element = {<AboutMe/>}/>
                 <Route exact path='/contact' element = {<ContactInfo/>}/>
                 <Route exact path='/skills' element = {<Skills/>}/>
                 <Route exact path='/projects' element = {<Projects/>}/>
-                <Route exact path='/blog' element = {<Blog/>}/>
             </Routes>
         </BrowserRouter>
         
