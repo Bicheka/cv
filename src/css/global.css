@@ -9,7 +9,7 @@
     
 
     /* Font */
-    --font-family: 'Helvetica', sans-serif;
+    --font-family: "Roboto Mono", monospace;
     --font-size: 1rem;
     --font-size-small: 0.8rem;
     --font-size-medium: 1.2rem;
@@ -18,7 +18,7 @@
     --font-weight: 400;
 
     /* width */
-    --width: 45%;
+    --width: 70%;
     --width-small: 60%;
     --width-xsmall: 80%;
 

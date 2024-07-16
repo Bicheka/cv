@@ -7,7 +7,6 @@ import '../css/NavBar.css'
 //components
 import AboutMe from './AboutMe';
 import ContactInfo from './ContactInfo';
-import Skills from './Skills';
 import Projects from './Projects';
 import ToggleTheme from './ToggleTheme';
 
@@ -89,13 +88,6 @@ function NavBar(){
                         <p className='navBarButtonText'>Contact</p>
                     </Link>
                     <Link 
-                        to = "/skills" 
-                        className={`navBarButton ${activeButton === 'skills' ? 'active' : ''}`}
-                        onClick={() => handleNavBarButtonClick('skills')}
-                    >
-                        <p className='navBarButtonText'>Skills</p>
-                    </Link>  
-                    <Link 
                         to = "/projects" 
                         className={`navBarButton ${activeButton === 'projects' ? 'active' : ''}`}
                         onClick={() => handleNavBarButtonClick('projects')}
@@ -116,7 +108,6 @@ function NavBar(){
                 <Route path="/" element={<Navigate to="/aboutme" />} />
                 <Route exact path='/aboutme' element = {<AboutMe/>}/>
                 <Route exact path='/contact' element = {<ContactInfo/>}/>
-                <Route exact path='/skills' element = {<Skills/>}/>
                 <Route exact path='/projects' element = {<Projects/>}/>
             </Routes>
         </BrowserRouter>

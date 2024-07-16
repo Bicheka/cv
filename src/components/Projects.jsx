@@ -35,16 +35,29 @@ function Projects() {
                 <h2 className="topic-title">Bicheka</h2>
                 <p className="topic-description">
                     Bicheka is an E-commerce web app that allows users to buy and sell products in a virtual 
-                    commercial center. Still under development, it is being refactored from monolithic to microservices architecture, 
-                    but substantial progress has been made already, and it is planned to be finished 2024.
+                    commercial center. Although it is still under development a lot of work has been done and
+                    it is being an amazing learing experience. I was able to test it on the cloud in GCP for container deployment with CI/DC using github actions
+                     and AWS for storing images for a while but it became a little expensive and as a learning project I decided to keep it without deploying it for now.
                 </p>
+                <h4 className="topic-subtitle">Technologies used</h4>
+                <ul className="topic-list">
+                    <li>Java</li>
+                    <li>Spring Boot</li>
+                    <li>MongoDB Atlas</li>
+                    <li>Docker</li>
+                    <li>ReactJS for the frontend</li>
+                </ul>
+                <h4 className="topic-subtitle">Key takeaways</h4>
+                <ul className="topic-list">
+                    <li>Experience CORS error handling and its functionality</li>
+                    <li>Implement API using MVC (model view controll)</li>
+                    <li>Connect API to local and hosted MongoDB databse using advance features like mongo template and advance parenting relationships between documents</li>
+                    <li>Dockerize App to make it portable</li>
+                    <li>Dependency injection to decouple the code to make it more robust</li>
+                    <li>Using advance security like Jason Web Token JWT for authentication</li>
+                    <li>Build a frontend that is able to connect to backend api and works dynamically with the data</li>
+                </ul>
             </div>
-            
-        
-    
-            
-            
-
         </div>
     )
     
