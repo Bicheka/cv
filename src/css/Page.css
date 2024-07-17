@@ -37,6 +37,11 @@
         font-size: var(--font-size-small);
         width: var(--width-small);
     }
+    .topic{
+        margin-bottom: 4rem;
+        padding: 1rem;
+        border-radius: 5px;
+    }
 }
 
 @media screen and (max-width: 800px) {
