@@ -48,7 +48,7 @@ function Projects() {
                     <li>ReactJS for the frontend</li>
                 </ul>
                 <h4 className="topic-subtitle">Key takeaways</h4>
-                <ul className="topic-list">
+                <ul>
                     <li>Experience CORS error handling and its functionality</li>
                     <li>Implement API using MVC (model view controll)</li>
                     <li>Connect API to local and hosted MongoDB databse using advance features like mongo template and advance parenting relationships between documents</li>
