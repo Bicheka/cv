@@ -23,9 +23,9 @@
     line-height: 3rem;
 }
 .my-name{
-    color: #83B4FF;
+    color: #0853f5;
+    font-weight: 600;
 }
-
 @media screen and (max-width: 1300px) {
     .about-me-header{
         display: block;
@@ -52,8 +52,15 @@
         width: 300px;
         height: 300px;
     }
+    .greeting{
+        font-size: 1.5rem;
+        margin-bottom: 3rem;
+    }
+    .introduction{
+        font-size: 0.9rem;
+        line-height: 0.9rem;
+    }
 }
-
 @media screen and (max-width: 600px) {
     .my-picture{
         width: 200px;

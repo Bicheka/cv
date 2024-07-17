@@ -11,10 +11,9 @@ function AboutMe() {
                 </div>
                 <div className="image-text">
                     <h2 className="greeting">Hi there! I'm David</h2>
-                    <p className="introduction">Welcome to my corner of the internet! My name <span className="my-name">David Martinez Gil</span>, and I'm thrilled to have you here. Let me share a bit about myself.</p>
+                    <p className="introduction">Welcome to my corner of the internet! My name is <span className="my-name">David Martinez Gil</span>, and I'm thrilled to have you here. Let me share a bit about myself.</p>
                 </div>
             </div>
-
            
             <h1 className="page-title">About Me</h1>
             
