@@ -11,7 +11,7 @@ function Projects() {
             <div className="topic">
                 <h2 className="topic-title">Emails Cleaner</h2>
                 <p className="topic-description">
-                    Allows users to delete all the spam emails in the emails folder automatically. 
+                    "Emails Cleaner" allows users to delete all the spam emails in the emails folder automatically. 
                     Users have the option to register so their spam emails get deleted automatically every a certain amount of time without their intervention, 
                     so they do not worry about their spam anymore, saving time and effort.
                 </p>
@@ -32,9 +32,9 @@ function Projects() {
             </div>
 
             <div className="topic">
-                <h2 className="topic-title">Bicheka</h2>
+                <h2 className="topic-title">Webmall</h2>
                 <p className="topic-description">
-                    Bicheka is an E-commerce web app that allows users to buy and sell products in a virtual 
+                    "Webmall" is an E-commerce web app that allows users to buy and sell products in a virtual 
                     commercial center. Although it is still under development a lot of work has been done and
                     it is being an amazing learing experience. I was able to test it on the cloud in GCP for container deployment with CI/DC using github actions
                      and AWS for storing images for a while but it became a little expensive and as a learning project I decided to keep it without deploying it for now.
@@ -57,6 +57,9 @@ function Projects() {
                     <li>Using advance security like Jason Web Token JWT for authentication</li>
                     <li>Build a frontend that is able to connect to backend api and works dynamically with the data</li>
                 </ul>
+                 <h4 className="topic-subtitle">Links</h4>
+                <a href="https://github.com/Bicheka/webmall-frontend" target="_blank" rel="noreferrer" className="topic-link">Frontend's Source Code &lt;/&gt;</a>
+                <a href="https://github.com/Bicheka/webmall" target="_blank" rel="noreferrer" className="topic-link">Backend's Source Code &lt;/&gt;</a>
             </div>
         </div>
     )
