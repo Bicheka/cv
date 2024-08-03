@@ -64,15 +64,11 @@
         gap: 0.1em;
         text-align: center;
         width: fit-content;
-        
-
         position: absolute;
-        
         top:4.2rem;
         left: 0px;
         z-index: 1;
         margin: 0;
-        
         text-decoration: none;
     }
 
@@ -85,7 +81,6 @@
         margin: 0;
         padding: 10px 0;
         background-color: var(--body-background-color);
-        
     }
     .navBarButton:hover .navBarButtonText {
         border-bottom: solid 2px var(--navbar-hover-color);
@@ -93,7 +88,6 @@
 
     .hamburger{
         display: flex;
-    
     }
 
 }
