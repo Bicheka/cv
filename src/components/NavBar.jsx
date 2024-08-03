@@ -89,8 +89,8 @@ function NavBar(){
                         <p className='navBarButtonText'>Projects</p>
                     </Link>
                     <a className="link" href="mailto:davidmartinezgilp@gmail.com">davidmartinezgilp@gmail.com</a>
-                    <a className="link" href="https://github.com/Bicheka" rel="noreferrer noopener" target="_blank"><GitHubIcon/></a>
-                    <a className="link" href="linkedin.com/in/david-martinez-gil-a51b78205" rel="noreferrer noopener" target="_blank"><LinkedInIcon/></a>
+                    <a className="link" href="https://github.com/Bicheka" rel="noreferrer noopener" target="_blank"><GitHubIcon className='icon'/></a>
+                    <a className="link" href="linkedin.com/in/david-martinez-gil-a51b78205" rel="noreferrer noopener" target="_blank"><LinkedInIcon className='icon'/></a>
                 </div>
 
                 <div className = "hamburger">
