@@ -61,11 +61,11 @@
         border : solid 1px var(--navbar-hover-color);
         display: none; /* Hide on smaller screens by default */
         flex-direction: column;
-        gap: 0.1em;
+        gap: 0.1rem;
         text-align: center;
-        width: fit-content;
+        width: 100%;
         position: absolute;
-        top:4.2rem;
+        top: 60px;
         left: 0px;
         z-index: 1;
         margin: 0;
@@ -73,17 +73,29 @@
     }
 
     .navBarButtons.active{
-        display:flex;
+        /* display:flex; */
+        display: block;
     }
-    
+    .navBarButtons.active .navBarButton{
+        display: block;
+    }
+    .navBarButtons.active .link{
+        display: block;
+        margin: 20px auto;
+    }
+    .navBarButtons.active .link .icon{
+        width: 50px;
+        height: 50px;
+    }
     .navBarButton{
         width: 200px;
-        margin: 0;
+        margin: 20px auto;
         padding: 10px 0;
         background-color: var(--body-background-color);
     }
     .navBarButton:hover .navBarButtonText {
         border-bottom: solid 2px var(--navbar-hover-color);
+        
     }
 
     .hamburger{
