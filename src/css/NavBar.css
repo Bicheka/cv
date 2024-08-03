@@ -41,8 +41,9 @@
 }
 
 
-link{
+.link{
     text-decoration: none;
+    color: var(--link-color)
 }
 
 .hamburger{

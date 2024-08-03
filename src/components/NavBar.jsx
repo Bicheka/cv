@@ -6,13 +6,14 @@ import '../css/NavBar.css'
 
 //components
 import AboutMe from './AboutMe';
-import ContactInfo from './ContactInfo';
 import Projects from './Projects';
 import ToggleTheme from './ToggleTheme';
 
 //icons
 import Hamburger from 'hamburger-react'
 import ScrollToTop from './ScrollToTop';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import GitHubIcon from '@mui/icons-material/GitHub';
 
 
 //hook
@@ -81,20 +82,15 @@ function NavBar(){
                         <p className='navBarButtonText'>About Me</p>
                     </Link>
                     <Link 
-                        to = "/contact" 
-                        className={`navBarButton ${activeButton === 'contact' ? 'active' : ''}`}
-                        onClick={() => handleNavBarButtonClick('contact')}
-                    >
-                        <p className='navBarButtonText'>Contact</p>
-                    </Link>
-                    <Link 
                         to = "/projects" 
                         className={`navBarButton ${activeButton === 'projects' ? 'active' : ''}`}
                         onClick={() => handleNavBarButtonClick('projects')}
                     >
                         <p className='navBarButtonText'>Projects</p>
                     </Link>
-
+                    <a className="link" href="mailto:davidmartinezgilp@gmail.com">davidmartinezgilp@gmail.com</a>
+                    <a className="link" href="https://github.com/Bicheka" rel="noreferrer noopener" target="_blank"><GitHubIcon/></a>
+                    <a className="link" href="linkedin.com/in/david-martinez-gil-a51b78205" rel="noreferrer noopener" target="_blank"><LinkedInIcon/></a>
                 </div>
 
                 <div className = "hamburger">
@@ -107,7 +103,6 @@ function NavBar(){
             <Routes>
                 <Route path="/" element={<Navigate to="/aboutme" />} />
                 <Route exact path='/aboutme' element = {<AboutMe/>}/>
-                <Route exact path='/contact' element = {<ContactInfo/>}/>
                 <Route exact path='/projects' element = {<Projects/>}/>
             </Routes>
         </BrowserRouter>
