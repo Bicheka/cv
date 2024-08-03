@@ -90,7 +90,7 @@ function NavBar(){
                     </Link>
                     <a className="link" href="mailto:davidmartinezgilp@gmail.com">davidmartinezgilp@gmail.com</a>
                     <a className="link" href="https://github.com/Bicheka" rel="noreferrer noopener" target="_blank"><GitHubIcon className='icon'/></a>
-                    <a className="link" href="linkedin.com/in/david-martinez-gil-a51b78205" rel="noreferrer noopener" target="_blank"><LinkedInIcon className='icon'/></a>
+                    <a className="link" href="https://linkedin.com/in/david-martinez-gil-a51b78205" rel="noreferrer noopener" target="_blank"><LinkedInIcon className='icon'/></a>
                 </div>
 
                 <div className = "hamburger">
