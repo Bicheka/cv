@@ -1,2 +1,2 @@
 # This is my personal website
-### have a look at <https:://davidmgil.com>
+### have a look at <https://davidmgil.com>
