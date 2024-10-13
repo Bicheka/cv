@@ -10,7 +10,6 @@
 .topic{
     margin-bottom: 10rem;
     background-color: var(--box-background-color);
-    padding: 3rem;
     border-radius: 10px;
     box-shadow: var(--box-shadow);
 }
@@ -35,7 +34,7 @@
 
 }
 
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 1500px) {
     .page{
         font-size: var(--font-size-small);
         width: var(--width-small);

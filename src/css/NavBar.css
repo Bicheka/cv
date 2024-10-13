@@ -58,12 +58,12 @@
 
     .navBarButtons {
         background-color: var(--navbar-background-color);
-        border : solid 1px var(--navbar-hover-color);
         display: none; /* Hide on smaller screens by default */
         flex-direction: column;
         gap: 0.1rem;
         text-align: center;
         width: 100%;
+        height: 100vh;
         position: absolute;
         top: 60px;
         left: 0px;

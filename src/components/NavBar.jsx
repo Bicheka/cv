@@ -7,17 +7,12 @@ import '../css/NavBar.css'
 //components
 import AboutMe from './AboutMe';
 import Projects from './Projects';
-import ToggleTheme from './ToggleTheme';
 
 //icons
 import Hamburger from 'hamburger-react'
 import ScrollToTop from './ScrollToTop';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
-
-
-//hook
-
 
 function NavBar(){
 
@@ -66,47 +61,70 @@ function NavBar(){
     }, [location]);
 
     return (
-        <BrowserRouter forceRefresh = {true}>
-            <ScrollToTop/>
-            <div className="navBar">
-
-                <ToggleTheme/>
-
-                <div  className={`navBarButtons ${isOpen ? 'active' : ''}`}>
-                        
-                    <Link 
-                        to = "/aboutme"
-                        className={`navBarButton ${activeButton === 'aboutme' ? 'active' : ''}`}
-                        onClick={() => handleNavBarButtonClick('aboutme')}
-                    >
-                        <p className='navBarButtonText'>About Me</p>
-                    </Link>
-                    <Link 
-                        to = "/projects" 
-                        className={`navBarButton ${activeButton === 'projects' ? 'active' : ''}`}
-                        onClick={() => handleNavBarButtonClick('projects')}
-                    >
-                        <p className='navBarButtonText'>Projects</p>
-                    </Link>
-                    <a className="link" href="mailto:davidmartinezgilp@gmail.com">davidmartinezgilp@gmail.com</a>
-                    <a className="link" href="https://github.com/Bicheka" rel="noreferrer noopener" target="_blank"><GitHubIcon className='icon'/></a>
-                    <a className="link" href="https://linkedin.com/in/david-martinez-gil-a51b78205" rel="noreferrer noopener" target="_blank"><LinkedInIcon className='icon'/></a>
-                </div>
-
-                <div className = "hamburger">
-                    <Hamburger direction="" size={20} toggled={isOpen} toggle={setIsOpen} onClick = {toggleNavbar}/>
-                </div>
-
-
+      <BrowserRouter forceRefresh={true}>
+        <ScrollToTop />
+        <div className="navBar">
+          <div className={`navBarButtons ${isOpen ? "active" : ""}`}>
+            <Link
+              to="/aboutme"
+              className={`navBarButton ${
+                activeButton === "aboutme" ? "active" : ""
+              }`}
+              onClick={() => handleNavBarButtonClick("aboutme")}
+            >
+              <p className="navBarButtonText">About Me</p>
+            </Link>
+            <Link
+              to="/projects"
+              className={`navBarButton ${
+                activeButton === "projects" ? "active" : ""
+              }`}
+              onClick={() => handleNavBarButtonClick("projects")}
+            >
+              <p className="navBarButtonText">Projects</p>
+            </Link>
+            <a className="link" href="mailto:davidmartinezgilp@gmail.com">
+              davidmartinezgilp@gmail.com
+            </a>
+            <div close>
+              <a
+                className="link"
+                href="https://github.com/Bicheka"
+                rel="noreferrer noopener"
+                target="_blank"
+              >
+                <GitHubIcon className="icon" />
+              </a>
             </div>
-            
-            <Routes>
-                <Route path="/" element={<Navigate to="/aboutme" />} />
-                <Route exact path='/aboutme' element = {<AboutMe/>}/>
-                <Route exact path='/projects' element = {<Projects/>}/>
-            </Routes>
-        </BrowserRouter>
-        
+            <div onClick={closeNavBar}>
+              <a
+                className="link"
+                href="https://linkedin.com/in/david-martinez-gil-a51b78205"
+                rel="noreferrer noopener"
+                target="_blank"
+              >
+                <LinkedInIcon className="icon" />
+              </a>
+            </div>
+          </div>
+
+          <div className="hamburger">
+            <Hamburger
+              direction=""
+              size={20}
+              toggled={isOpen}
+              toggle={setIsOpen}
+              onClick={toggleNavbar}
+            />
+          </div>
+        </div>
+
+        <Routes>
+          <Route path="/" element={<Navigate to="/aboutme" />} />
+          <Route exact path="/aboutme" element={<AboutMe />} />
+          <Route exact path="/projects" element={<Projects />} />
+        </Routes>
+      </BrowserRouter>
     );
 }
 

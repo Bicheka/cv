@@ -5,11 +5,13 @@ function Projects() {
       <div className="page">
         <h1 className="page-title">Projects</h1>
         <div className="topic">
-          <h2 className="topic-title">File Transfer System (Work In Progress)</h2>
+          <h2 className="topic-title">
+            File Transfer System (Work In Progress)
+          </h2>
           <p className="topic-description">
             "File Transfer System" is composed of two parts, a Rust library
             called FTS and a Tauri app called Fileflow. They both are joint in a
-            Rust Cargo Workspace.FTS provides low-level functionality for
+            Rust Cargo Workspace. FTS provides low-level functionality for
             networking, including p2p and file transferring logic. On the other
             hand, Fileflow uses Tauri to create a cross-platform app that serves
             to transfer files from peer to peer directly including IOS and
@@ -31,6 +33,8 @@ function Projects() {
           >
             Source Code &lt;/&gt;
           </a>
+
+          <a href="https://crates.io/crates/file-transfer-system" target="_blank" rel="noreferrer" className="topic-link">crates.io</a>
         </div>
 
         <div className="topic">
