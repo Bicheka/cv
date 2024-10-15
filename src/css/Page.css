@@ -31,9 +31,17 @@
     text-decoration:solid underline;
     color: var(--link-color);
     display: block;
-
 }
 
+.in-text-link{
+    display: inline;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+.rust-disclaimer{
+    margin-top: 2rem;
+    font-style: italic;
+}
 @media screen and (max-width: 1500px) {
     .page{
         font-size: var(--font-size-small);

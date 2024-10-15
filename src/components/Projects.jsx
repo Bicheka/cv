@@ -5,25 +5,35 @@ function Projects() {
       <div className="page">
         <h1 className="page-title">Projects</h1>
         <div className="topic">
-          <h2 className="topic-title">
-            File Transfer System (Work In Progress)
-          </h2>
+          <h2 className="topic-title">File Transfer System (WIP)</h2>
           <p className="topic-description">
-            "File Transfer System" is composed of two parts, a Rust library
-            called FTS and a Tauri app called Fileflow. They both are joint in a
-            Rust Cargo Workspace. FTS provides low-level functionality for
-            networking, including p2p and file transferring logic. On the other
-            hand, Fileflow uses Tauri to create a cross-platform app that serves
-            to transfer files from peer to peer directly including IOS and
-            Android.
+            FTS provides low-level functionality for trans large files from one device to another.
           </p>
-          <h4 className="topic-subtitle">Technologies used</h4>
-          <ul className="topic-list">
-            <li>Rust</li>
-            <li>Tauri</li>
-            <li>ReactJS</li>
-            <li>Tailwind Css</li>
+          <h4 className="topic-subtitle">Provides functionality for:</h4>
+          <ul>
+            <li>File transfering and folder recursive transfering</li>
+            <li>NAT traversal for p2p connection and IPV6</li>
+            <li>
+              Functionality to get current device private and public IP address
+            </li>
+            <li>
+              Uses multithreaded tokio runtime to asynchronously send files and
+              process file requests
+            </li>
           </ul>
+          <p className="rust-disclaimer">
+            This project is fully implemented using the Rust programming
+            language. Visit
+            <a
+              href="https://www.rust-lang.org/"
+              target="_blank"
+              rel="noreferrer"
+              className="topic-link in-text-link"
+            >
+              rust-lang.org
+            </a>
+            to learn more about why Rust.
+          </p>
           <h4 className="topic-subtitle">Links</h4>
           <a
             href="https://github.com/Bicheka/file-transfer-system"
@@ -34,7 +44,36 @@ function Projects() {
             Source Code &lt;/&gt;
           </a>
 
-          <a href="https://crates.io/crates/file-transfer-system" target="_blank" rel="noreferrer" className="topic-link">crates.io</a>
+          <a
+            href="https://crates.io/crates/file-transfer-system"
+            target="_blank"
+            rel="noreferrer"
+            className="topic-link"
+          >
+            crates.io
+          </a>
+        </div>
+        <div className="topic">
+          <h2 className="topic-title">Fileflow (WIP)</h2>
+          <p className="topic-description">
+            "Fileflow" uses Tauri to create a cross-platform app that serves to
+            transfer files from peer to peer directly including IOS and Android.
+          </p>
+          <h4 className="topic-subtitle">Technologies used</h4>
+          <ul className="topic-list">
+            <li>Rust</li>
+            <li>Tauri</li>
+            <li>ReactJS</li>
+            <li>Tailwind Css</li>
+          </ul>
+          <a
+            href="https://github.com/Bicheka/fileflow"
+            target="_blank"
+            rel="noreferrer"
+            className="topic-link"
+          >
+            Source Code &lt;/&gt;
+          </a>
         </div>
 
         <div className="topic">
