@@ -1,0 +1,344 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth snap-y snap-proximity">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/src/style.css" rel="stylesheet" />
+    <title>David Martinez Gil - CV</title>
+  </head>
+  <body class="bg-black text-gray-50">
+    <div class="relative w-full px-6 lg:w-[max(50%,1000px)] mx-auto">
+      <nav
+        class="fixed top-0 left-0 w-full z-50 bg-black/90 p-4 border-b border-gray-800 lg:w-auto lg:top-1/2 lg:left-auto lg:right-[max(1rem,25vw-15rem)] lg:-translate-y-1/2 lg:bg-transparent lg:border-none"
+      >
+      <ul class="flex justify-center gap-6 lg:flex-col lg:gap-4">
+        <li><a href="#home" class="nav-link hover:text-blue-400 transition block p-3">Home</a></li>
+        <li><a href="#aboutme" class="nav-link hover:text-blue-400 transition block p-3">About Me</a></li>
+        <li><a href="#projects" class="nav-link hover:text-blue-400 transition block p-3">Projects</a></li>
+        <li><a href="#contact" class="nav-link hover:text-blue-400 transition block p-3">Contact</a></li>
+
+        <li class="lg:mt-6 flex items-center">
+          <a href="/David Martinez resume.pdf" 
+             download 
+             class="inline-flex items-center px-4 py-2 rounded-lg border border-gray-700 bg-gray-900/50 hover:bg-white hover:text-black hover:border-white transition-all duration-300 text-sm font-medium leading-none">
+            Resume ↓
+          </a>
+        </li>
+      </ul>
+      </nav>
+      <main class="">
+        <section id="home" class="h-screen snap-start flex flex-col justify-center">
+          <div class="max-w-4xl">
+            <p class="text-cyan-500 font-mono tracking-[0.3em] uppercase mb-4 animate-pulse">
+              System.init()
+            </p>
+            <h1 class="text-7xl md:text-9xl font-black tracking-tighter text-white leading-[0.8] mb-8">
+              Hi, I'm <br />
+              <span class="bg-clip-text">David Martinez</span>
+            </h1>
+            <p class="text-2xl md:text-3xl text-gray-400 font-light max-w-2xl leading-tight">
+              I'm just a guy who does coding work as a hobby
+            </p>
+          </div>
+        </section>
+
+        <section id="aboutme" class="min-h-screen snap-start flex flex-col md:flex-row items-center justify-center gap-12 lg:gap-24 py-20">
+  
+          <div class="relative shrink-0">
+            <div class="absolute -inset-10 bg-cyan-500/5 rounded-full blur-[80px]"></div>
+            
+            <div class="relative group">
+              <div class="absolute -inset-0.5 bg-linear-to-br from-gray-800 to-cyan-900 rounded-2xl opacity-50 group-hover:opacity-100 transition duration-500"></div>
+              <img 
+                class="relative w-64 h-80 md:w-80 md:h-112.5 rounded-2xl object-cover grayscale hover:grayscale-0 transition-all duration-700 shadow-2xl" 
+                src="./src/assets/my pic.png" 
+                alt="David Martinez Gil"
+              >
+            </div>
+          </div>
+        
+          <div class="max-w-xl">
+            <h2 class="text-4xl font-bold mb-6 text-white">About Me</h2>
+            
+            <div class="space-y-6 text-lg text-gray-400 leading-relaxed">
+              <p>
+                I am <span class="text-white">David Martinez Gil</span>. I don't just write code; 
+                I design architectures that prioritize security and efficiency. 
+              </p>
+              
+              <p class="italic text-gray-300 border-l-2 border-cyan-500 pl-6">
+                "If the problem is hard, that is exactly what I want to work on."
+              </p>
+        
+              <p>
+                My approach is rooted in <span class="text-gray-200">first-principles thinking</span>. 
+                Whether it's refactoring P2P libraries for exclusive asynchronicity or 
+                researching Deep Packet Inspection, I focus on the logic that keeps 
+                systems robust under pressure.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <style>
+          .outline-text {
+            -webkit-text-stroke: 1px #334155;
+            color: transparent;
+          }
+        </style>
+        <section
+          id="projects"
+          class="min-h-screen snap-start flex flex-col justify-center py-20"
+        >
+          <div class="mt-20">
+            <h1 class="text-5xl font-mono mb-16">Projects</h1>
+
+            <div
+              class="mb-24 border-l-2 border-green-500/30 pl-8 hover:border-green-400 transition-colors group"
+            >
+              <div class="flex items-center gap-4 mb-4">
+                <h3
+                  class="text-3xl font-mono font-bold tracking-tight text-white group-hover:text-green-400 transition-colors"
+                >
+                  file-express
+                </h3>
+                <span
+                  class="px-3 py-1 text-xs font-mono bg-green-500/10 text-green-400 border border-green-500/20 rounded-full"
+                >
+                  Rust / GPG / CI-CD
+                </span>
+              </div>
+
+              <p class="text-gray-400 text-lg leading-relaxed mb-6 max-w-3xl">
+                A high-performance CLI tool for
+                <span class="text-gray-200"
+                  >secure, peer-to-peer file transfers</span
+                >. It prioritizes integrity and authenticity by leveraging
+                GPG-signed checks and ephemeral key generation for encrypted
+                data streams.
+              </p>
+
+              <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
+                <div
+                  class="bg-gray-900/50 p-4 rounded-lg border border-gray-800"
+                >
+                  <div class="text-green-400 text-sm font-mono mb-1">
+                    Security
+                  </div>
+                  <div class="text-gray-300">GPG / AES-256-GCM</div>
+                </div>
+                <div
+                  class="bg-gray-900/50 p-4 rounded-lg border border-gray-800"
+                >
+                  <div class="text-green-400 text-sm font-mono mb-1">
+                    Deployment
+                  </div>
+                  <div class="text-gray-300">GitHub Actions (Cross-Arch)</div>
+                </div>
+                <div
+                  class="bg-gray-900/50 p-4 rounded-lg border border-gray-800"
+                >
+                  <div class="text-green-400 text-sm font-mono mb-1">
+                    Binary Size
+                  </div>
+                  <div class="text-gray-300">~2.4MB Optimized Rust</div>
+                </div>
+              </div>
+
+              <div
+                class="bg-[#0d0d0d] p-6 rounded-xl border border-gray-800 shadow-2xl font-mono text-sm"
+              >
+                <div class="text-green-400">
+                  $ fexpress send ./backup.zip --secure
+                </div>
+                <div class="text-gray-300">
+                  Generating ephemeral key... Done.
+                </div>
+                <div class="text-blue-400">
+                  Transferring [████████████] 100%
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="mb-24 border-l-2 border-blue-500/30 pl-8 hover:border-blue-400 transition-colors group"
+            >
+              <div class="flex items-center gap-4 mb-4">
+                <h3
+                  class="text-3xl font-mono font-bold tracking-tight text-white group-hover:text-blue-400 transition-colors"
+                >
+                  p2ps
+                </h3>
+                <span
+                  class="px-3 py-1 text-xs font-mono bg-blue-500/10 text-blue-400 border border-blue-500/20 rounded-full"
+                >
+                  Rust / Tokio / mTLS
+                </span>
+              </div>
+
+              <p class="text-gray-400 text-lg leading-relaxed mb-6 max-w-3xl">
+                An async-first networking library that abstracts the complexity
+                of
+                <span class="text-gray-200">Mutual TLS (mTLS)</span>. It handles
+                automated self-signed identity generation and enforces strict
+                two-way authentication without a central CA.
+              </p>
+
+              <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
+                <div
+                  class="bg-gray-900/50 p-4 rounded-lg border border-gray-800"
+                >
+                  <div class="text-blue-400 text-sm font-mono mb-1">
+                    Architecture
+                  </div>
+                  <div class="text-gray-300">Exclusively Asynchronous</div>
+                </div>
+                <div
+                  class="bg-gray-900/50 p-4 rounded-lg border border-gray-800"
+                >
+                  <div class="text-blue-400 text-sm font-mono mb-1">
+                    Security
+                  </div>
+                  <div class="text-gray-300">tokio-rustls / E2EE</div>
+                </div>
+                <div
+                  class="bg-gray-900/50 p-4 rounded-lg border border-gray-800"
+                >
+                  <div class="text-blue-400 text-sm font-mono mb-1">
+                    Performance
+                  </div>
+                  <div class="text-gray-300">Zero-copy state handling</div>
+                </div>
+              </div>
+
+              <div class="relative group/code">
+                <pre
+                  class="bg-[#0d0d0d] p-6 rounded-xl border border-gray-800 overflow-x-auto"
+                >
+        <code class="font-mono text-sm text-gray-300">
+        <span class="text-purple-400">let</span> identity = <span class="text-yellow-400">P2pIdentity</span>::<span class="text-blue-300">generate</span>();
+        <span class="text-purple-400">let</span> connection = <span class="text-blue-300">establish_secure_link</span>(stream, config).<span class="text-purple-400">await</span>?;
+        </code></pre>
+              </div>
+            </div>
+
+            <div
+              class="mb-24 border-l-2 border-yellow-500/30 pl-8 hover:border-yellow-400 transition-colors group"
+            >
+              <div class="flex items-center gap-4 mb-4">
+                <h3
+                  class="text-3xl font-mono font-bold tracking-tight text-white group-hover:text-yellow-400 transition-colors"
+                >
+                  gommit
+                </h3>
+                <span
+                  class="px-3 py-1 text-xs font-mono bg-yellow-500/10 text-yellow-400 border border-yellow-500/20 rounded-full"
+                >
+                  TypeScript / Bun / Multi-LLM
+                </span>
+              </div>
+
+              <p class="text-gray-400 text-lg leading-relaxed mb-6 max-w-3xl">
+                A CLI utility for generating
+                <span class="text-gray-200">Conventional Commits</span> via
+                LLMs. It features a provider-agnostic core, supporting
+                <span class="text-gray-200">Local AI (Ollama)</span> for privacy
+                and
+                <span class="text-gray-200">Cloud Models (OpenAI/Google)</span>
+                for logic.
+              </p>
+
+              <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
+                <div
+                  class="bg-gray-900/50 p-4 rounded-lg border border-gray-800"
+                >
+                  <div class="text-yellow-400 text-sm font-mono mb-1">
+                    Runtime
+                  </div>
+                  <div class="text-gray-300">Bun (Instant Startup)</div>
+                </div>
+                <div
+                  class="bg-gray-900/50 p-4 rounded-lg border border-gray-800"
+                >
+                  <div class="text-yellow-400 text-sm font-mono mb-1">
+                    AI Logic
+                  </div>
+                  <div class="text-gray-300">
+                    Pluggable Provider Architecture
+                  </div>
+                </div>
+                <div
+                  class="bg-gray-900/50 p-4 rounded-lg border border-gray-800"
+                >
+                  <div class="text-yellow-400 text-sm font-mono mb-1">
+                    Features
+                  </div>
+                  <div class="text-gray-300">Intelligent Diff Compression</div>
+                </div>
+              </div>
+
+              <div
+                class="bg-[#0d0d0d] p-6 rounded-xl border border-gray-800 shadow-2xl font-mono text-sm"
+              >
+                <div class="text-gray-500">? Select AI Provider:</div>
+                <div class="text-blue-400 font-bold">❯ OpenAI (Cloud)</div>
+                <div class="text-gray-400">○ Ollama (Local)</div>
+                <div class="text-green-400 mt-2 italic">
+                  ✔ feat(network): implement mTLS handshake...
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="contact" class="min-h-screen snap-start flex flex-col justify-center py-20">
+          <div class="max-w-3xl">
+            <h2 class="text-5xl md:text-7xl font-bold text-white mb-8 tracking-tight">
+              Get in touch
+            </h2>
+            
+            <p class="text-xl md:text-2xl text-gray-400 mb-12 leading-relaxed">
+              Whether you have a question about my projects or just want to say hi, 
+              my inbox is always open.
+            </p>
+        
+            <div class="space-y-6">
+              <a href="mailto:davidmartinezgilp@gmail.com" 
+                 class="block p-6 rounded-2xl border border-gray-800 bg-gray-900/30 hover:bg-gray-800/50 hover:border-cyan-500/50 transition-all duration-300 group">
+                <div class="flex items-center justify-between">
+                  <div>
+                    <span class="text-sm font-mono text-cyan-500 uppercase tracking-widest mb-1 block">Email</span>
+                    <span class="text-2xl md:text-3xl font-medium text-white">davidmartinezgilp@gmail.com</span>
+                  </div>
+                  <span class="text-gray-600 group-hover:text-cyan-500 transform group-hover:translate-x-2 transition-all">
+                    →
+                  </span>
+                </div>
+              </a>
+        
+              <a href="https://github.com/bicheka" target="_blank"
+                 class="block p-6 rounded-2xl border border-gray-800 bg-gray-900/30 hover:bg-gray-800/50 hover:border-cyan-500/50 transition-all duration-300 group">
+                <div class="flex items-center justify-between">
+                  <div>
+                    <span class="text-sm font-mono text-cyan-500 uppercase tracking-widest mb-1 block">GitHub</span>
+                    <span class="text-2xl md:text-3xl font-medium text-white">@bicheka</span>
+                  </div>
+                  <span class="text-gray-600 group-hover:text-cyan-500 transform group-hover:translate-x-2 transition-all">
+                    →
+                  </span>
+                </div>
+              </a>
+            </div>
+        
+            <footer class="mt-24 pt-8 border-t border-gray-900 flex justify-between items-center text-gray-500 text-sm">
+              <p>© 2026 David Martinez Gil</p>
+              <a href="#home" class="hover:text-white transition-colors">Back to top ↑</a>
+            </footer>
+          </div>
+        </section>
+      </main>
+    </div>
+    <footer></footer>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
