@@ -1,24 +1,3 @@
-// const sections = document.querySelectorAll("section");
-// const navLinks = document.querySelectorAll(".nav-link");
-
-// const observer = new IntersectionObserver(
-//   (entries) => {
-//     entries.forEach((entry) => {
-//       if (entry.isIntersecting) {
-//         navLinks.forEach((link) => {
-//           link.classList.remove("text-blue-400");
-//           if (link.getAttribute("href") === `#${entry.target.id}`) {
-//             link.classList.add("text-blue-400");
-//           }
-//         });
-//       }
-//     });
-//   },
-//   {
-//     threshold: 0.2, // trigger when 20% visible
-//   }
-// );
-
 // sections.forEach((section) => observer.observe(section));
 
 // Select all the sections and navigation links
